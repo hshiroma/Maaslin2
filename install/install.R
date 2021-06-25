@@ -1,3 +1,3 @@
-install.packages("devtools")
-library("devtools")
-install_github("biobakery/Maaslin2")
+if(!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install("Maaslin2")
